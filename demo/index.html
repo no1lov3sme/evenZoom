@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>evenZoom</title>
+    <link rel="stylesheet" type="text/css"
+          href="http://fonts.googleapis.com/css?family=Roboto:100&amp;subset=latin,latin-ext" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="http://necolas.github.io/normalize.css/3.0.1/normalize.css"
+          media="screen"/>
+    <link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/default.min.css">
+    <link rel="stylesheet" type="text/css" href="demo.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="../dist/evenZoom.css"/>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.3.min.js"></script>
+    <script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+    <script type="text/javascript" src="../dist/evenZoom.js"></script>
+</head>
+<body>
+<div id="main">
+    <div class="row">
+        <a href="http://www.even.lv" target="_blank" id="logo">even<span>innovative solutions</span></a>
+
+        <p class="text-center">Website development studio in Latvia</p>
+
+        <p class="text-center"><a href="http://www.even.lv" target="_blank">www.even.lv</a></p>
+    </div>
+    <div class="row">
+        <h1>evenZoom</h1>
+
+        <p>evenZoom is a jQuery plugin, that adds zoom functionality to images</p>
+    </div>
+    <div class="row">
+        <h1>Example</h1>
+
+        <div id="example" data-zoomed="img/img-zoomed.jpg">
+            <img src="img/img-original.jpg" alt="Example" />
+        </div>
+        <p>
+            <small>Photo by <a href="https://flic.kr/p/82CdZr" target="_blank">sea turtle</a></small>
+        </p>
+    </div>
+    <div class="row">
+        <h1>Version</h1>
+
+        <p>1.0</p>
+    </div>
+    <div class="row">
+        <h1>Files include</h1>
+        <h4>1. include jQuery</h4>
+        <pre><code class="xml">&lt;script type="text/javascript" src="http://code.jquery.com/jquery-1.6.3.min.js"&gt;&lt;/script&gt;</code></pre>
+        <h4>2. include evenZoom.css</h4>
+        <pre><code class="xml">&lt;link rel="stylesheet" type="text/css" href="evenZoom.css" /&gt;</code></pre>
+        <h4>3. include evenZoom.js</h4>
+        <pre><code class="xml">&lt;script type="text/javascript" src="evenZoom.js"&gt;&lt;/script&gt;</code></pre>
+    </div>
+    <div class="row">
+        <h1>Basic Usage</h1>
+
+        <p>Add <strong>data-zoomed</strong> attribute to <strong>#example</strong></p>
+        <pre>
+            <code class="html">&lt;div id="example" data-zoomed="img/img-zoomed.jpg"&gt;
+    &lt;img src="img/img-original.jpg" alt="Example" /&gt;
+&lt;/div&gt;</code>
+        </pre>
+
+        <p>Initialize evenZoom on <strong>#example</strong> selector</p>
+        <pre>
+            <code class="javascript">$(function() {
+    $("#example").evenZoom();
+});</code>
+        </pre>
+
+        <p>You can customize lens style in <strong>evenZoom.css</strong></p>
+        <pre>
+            <code class="css">.evenZoom .evenZoomLens {
+    background-color: #fff;
+    box-shadow: -5px -5px 30px rgba(255, 255, 255, .7) inset,
+                5px 5px 20px rgba(0, 0, 0, .3) inset,
+                10px 10px 25px rgba(0, 0, 0, .1);
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    -webkit-transition: opacity .2s;
+    -moz-transition: opacity .2s;
+    -o-transition: opacity .2s;
+    transition: opacity .2s;
+}</code>
+        </pre>
+    </div>
+    <div class="row">
+        <h1>Properties</h1>
+        <h4>1. lensPinningDistance</h4>
+
+        <p>Number of pixels lens is getting pinned when leaving range of minimal or maximal position</p>
+
+        <div>Default:
+            <pre class="inline-code"><code class="javascript">20</code></pre>
+        </div>
+
+        <pre>
+            <code class="javascript">$(function() {
+    $("#example").evenZoom({
+        lensPinningDistance: 20
+    });
+});</code>
+</pre>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function () {
+        $("pre code").each(function (i, e) {
+            hljs.highlightBlock(e)
+        });
+
+        $("#example").evenZoom();
+    });
+</script>
+</body>
+</html>

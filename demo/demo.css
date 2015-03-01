@@ -1,0 +1,85 @@
+#main {
+    width: 960px;
+    margin: auto;
+}
+
+#main .row {
+    margin: 25px 0;
+    padding: 5px 10px;
+}
+
+#main .row #logo {
+    background: url("http://www.even.lv/img/even-logo-top.png") no-repeat;
+    width: 314px;
+    height: 129px;
+    display: block;
+    color: #606060;
+    font-size: 64px;
+    font-weight: 100;
+    line-height: 48px;
+    padding-left: 187px;
+    padding-top: 36px;
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+}
+
+#main .row #logo > span {
+    display: block;
+    font-size: 30px;
+    color: #7E7E7E;
+}
+
+#main .row .text-center {
+    text-align: center;
+}
+
+#main .row button {
+    background: #ff3767;
+    color: #FFFFFF;
+    border: 0;
+    padding: 5px 10px;
+    margin: 0 2px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#main .row button:hover {
+    background: #AD0042;
+}
+
+#main .row button:active {
+    background: #8a003b;
+}
+
+#main .row a {
+    color: #ff3767;
+    text-decoration: none;
+}
+
+#main .row a:hover {
+    color: #8a003b;
+}
+
+#main .row hr {
+    border: 0;
+    border-top: 1px solid #D5D5D5;
+    margin: 20px 0;
+}
+
+#main .row pre.inline-code {
+    display: inline;
+}
+
+#main .row pre.inline-code > code {
+    display: inline-block;
+}
+
+#example {
+    display: inline-block;
+    border: 1px solid #D5D5D5;
+}
+
+#example > img {
+    float: left;
+}
