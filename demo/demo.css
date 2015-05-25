@@ -9,7 +9,8 @@
 }
 
 #main .row #logo {
-    background: url("http://www.even.lv/img/even-logo-top.png") no-repeat;
+    background: url("http://www.even.lv/img/even-logo.png") no-repeat;
+    background-size: 160px 160px;
     width: 314px;
     height: 129px;
     display: block;
