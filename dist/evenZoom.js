@@ -115,7 +115,7 @@
             if ($( "img", $container ).length) {
                 return $( "img:first", $container ).attr( "src" );
             }
-            console.warn( "No original img found, please set \"data-img\" for evenZoom selector" );
+            console.warn( "No original img found, please add an <img> tag inside evenZoom selector" );
             return false;
         };
 
